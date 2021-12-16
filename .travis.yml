@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t flatorez/interviewbot-client -f Dockerfile.dev .
+
+script:
+  - docker run flatorez/interviewbot-client npm run test -- --coverage
