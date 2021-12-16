@@ -6,4 +6,4 @@ before_install:
   - docker build -t flatorez/interviewbot-client -f Dockerfile.dev .
 
 script:
-  - docker run flatorez/interviewbot-client npm run test -- --coverage
+  - docker run -e CI=true flatorez/interviewbot-client npm run test -- --coverage
