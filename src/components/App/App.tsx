@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../../logo.svg';
+
 import './App.css';
 
 function App() {
@@ -7,9 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <h1 className="text-3xl font-bold underline">
+          Hi all! InterviewBot here!
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
