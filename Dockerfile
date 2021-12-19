@@ -1,12 +1,12 @@
 FROM node:alpine
 
-WORKDIR '/app'
+WORKDIR /app
 
 COPY package*.json ./
-RUN npm install
-COPY . .
+RUN yarn install
 
-RUN npm run build
+COPY . .
+RUN yarn build
 
 FROM nginx
 
